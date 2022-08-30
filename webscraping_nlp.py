@@ -49,7 +49,7 @@ from nltk.tokenize import RegexpTokenizer
 tokenizer = RegexpTokenizer(r'[a-zA-Z]\w+') 
 tokens = tokenizer.tokenize(text_list)
  
-stopwords = nltk.corpus.stopwords.words() + ['inteligência'] + ['artificial']
+stopwords = nltk.corpus.stopwords.words()
 
 new_list = [token.lower() for token in tokens if token.lower() not in stopwords]
  
